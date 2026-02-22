@@ -131,7 +131,7 @@ pdf-compressor/
 ## 🎯 Future Improvements
 
 * Standalone EXE packaging
-* Drag & drop upload
+* Drag & drop upload (Already Done)
 * Compression preview statistics
 * Automatic file cleanup
 * Deployment to cloud server
