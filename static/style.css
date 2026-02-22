@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+
+.header{
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Page wrapper centers content */
+
+.page{
+    /* background-color: #1f4fb0; */
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card */
+
+.card{
+    background-color: rgb(255, 255, 255);
+    padding: 30px 35px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Form spacing */
+
+.form-group{
+    margin-bottom: 18px;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Selection section */
+
+select{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid #cfd6de;
+    border-radius:12px;
+    background-color:#fff;
+    font-size:14px;
+    cursor:pointer;
+    outline:none;
+
+    /* subtle depth */
+    box-shadow:0 1px 3px rgba(0,0,0,0.06);
+
+    /* smooth transition */
+    transition:all .18s ease;
+
+    /* remove ugly default arrow styling inconsistencies */
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+
+    /* custom arrow */
+    background-image:url("data:image/svg+xml;utf8,<svg fill='%23777' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat:no-repeat;
+    background-position:right 12px center;
+    background-size:16px;
+
+    padding-right:40px;
+}
+
+select:focus{
+    border-color:#3068cf;
+    box-shadow:0 0 0 1px rgba(48,104,207,0.15);
+}
+
+/* Button */
+
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #3068cf;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1f4fb0;
+}
+
+
+
+/* Input type file section styling */
+/* Hide real input */
+.upload-group input[type="file"]{
+    display:none;
+}
+
+/* Upload box styling */
+.upload-box{
+    width:100%;
+    padding:30px 20px;
+    border:2px dashed #c7ced6;
+    border-radius:10px;
+    background:#fafbfc;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transition:all .3s ease-in-out;
+}
+
+/* Hover effect */
+.upload-box:hover{
+    border-color:#3068cf;
+    background:#f2f6ff;
+}
+
+/* Text styling */
+.upload-title{
+    font-weight:bold;
+    margin-bottom:4px;
+}
+
+.upload-sub{
+    font-size:12px;
+    color:#777;
+}
+
+/* File name preview */
+.file-name{
+    margin-top:8px;
+    font-size:13px;
+    color:#3068cf;
+    font-weight:bold;
+}
+
+
+/* Footer */
+.app-footer{
+    text-align:center;
+    padding:16px;
+    /* border-top:1px solid #777; */
+    font-size:12px;
+    color:#aaa;
+}
+
+.app-footer a{
+    color:inherit;          /* keeps same color as text */
+    text-decoration:none;   /* removes underline */
+    font-weight:inherit;    /* keeps same font weight */
+}
+
+.app-footer a:hover{
+    text-decoration:underline;   /* subtle hover feedback */
+}
