@@ -44,7 +44,7 @@ The backend compression feature runs locally because it requires Python and Ghos
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pdf-compressor.git
+git clone https://github.com/AvirupBasak/pdf-compressor.git
 cd pdf-compressor
 ```
 
