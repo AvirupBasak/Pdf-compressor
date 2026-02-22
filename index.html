@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#9888; PDF Compressor Frontend For demo</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>PDF Compressor</h1>
+    </div>
+    <div class="page">
+        <div class="card">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group upload-group">
+                    <input 
+                        type="file" 
+                        id="pdfUpload" 
+                        name="pdf_file" 
+                        accept=".pdf" 
+                        required
+                    >
+                    <label for="pdfUpload" class="upload-box">
+                        <span class="upload-title">Upload your PDF file</span>
+                        <span class="upload-sub">Click or drag file here</span>
+                    </label>
+                    <div class="file-name" id="fileName"></div>
+                </div>
+                <div class="form-group">
+                    <label>Select Compression Mode</label>
+                </div>
+                <div class="form-group">
+                    <select name="mode" required>
+                        <option value="min">Minimum Compression</option>
+                        <option value="mid">Medium Compression</option>
+                        <option value="max">Maximum Compression</option>
+                    </select>
+                </div>
+                <button type="submit">Compress PDF</button>
+            </form>
+        </div>
+    </div>
+     <footer>
+        <div class="app-footer">
+            <p>Made For curiosity by <a href="https://instagram.com/_avirup_._" target="_blank">Avirup</a></p>
+            <p><b>&#9888; Demo Only - Backend runs locally&#9888;</b></p>
+        </div>
+     </footer>
+</body>
+<script src="static/script.js"></script>
+</html>
