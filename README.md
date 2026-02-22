@@ -11,7 +11,7 @@ You can preview the UI here:
 👉 https://avirupbasak.github.io/Pdf-compressor/
 
 ⚠️ Note:
-This demo shows only the frontend design.
+This demo shows only the frontend design. After cloning just delete the index.html file from root path (Pdf-compressor/index.html).
 The backend compression feature runs locally because it requires Python and Ghostscript.
 
 ---
