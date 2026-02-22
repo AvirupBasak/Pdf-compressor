@@ -5,6 +5,17 @@ Built using **Flask**, **Ghostscript**, and standard web technologies, this tool
 
 ---
 
+🌐 Live Frontend Demo
+
+You can preview the UI here:
+👉 https://avirupbasak.github.io/Pdf-compressor/
+
+⚠️ Note:
+This demo shows only the frontend design.
+The backend compression feature runs locally because it requires Python and Ghostscript.
+
+---
+
 ## 🚀 Features
 
 * 📂 Upload any PDF file from your device
