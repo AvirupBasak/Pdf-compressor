@@ -84,8 +84,9 @@ pip install -r requirements.txt
 
 Download and install Ghostscript from:
 👉 https://www.ghostscript.com/download/gsdnld.html
+👉 https://drive.google.com/drive/folders/1RSIlwbOqEF4p4pXzdPY1BOqZoKnjzF8X?usp=sharing
 
-Make sure it is added to your system PATH or update the Ghostscript path in `app.py`.
+Make sure it is added to your system PATH or update the Ghostscript path in `app.py`, Generally the path is 👉 `"C:\Program Files\gs\gs10.06.0\bin\gswin64c.exe"`.
 
 ---
 
