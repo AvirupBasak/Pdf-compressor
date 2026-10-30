@@ -83,6 +83,7 @@ pip install -r requirements.txt
 ### 4️⃣ Install Ghostscript
 
 Download and install Ghostscript from:
+
 👉 https://www.ghostscript.com/download/gsdnld.html
 
 
