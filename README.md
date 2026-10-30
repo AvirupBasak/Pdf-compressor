@@ -145,7 +145,7 @@ pdf-compressor/
 ## 👨‍💻 Author
 
 **Avirup Basak**
-BCA Student | Aspiring AI Developer
+BCA Student | Aspiring To Create something new
 
 ---
 
