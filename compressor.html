@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO &#9888; PDF Compressor</title>
+    <link rel="stylesheet" href="static/style.css">
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- headder -->
+    <div  class="header compressor-header">
+        <h1>PDF Compressor</h1>
+        <p class="tools-description">
+            Compress Your PDF's what ever you need
+        </p>
+    </div>
+
+    <!-- full body page/ Parent div under body -->
+    <div class="page">
+        <!-- Child div of page class -->
+        <div class="card">
+
+            <!-- Form -->
+            <form action="#" method="post" enctype="multipart/form-data">
+                
+                <!-- File input section -->
+                <div class="form-group upload-group">
+
+                    <input type="file" id="pdfUpload" name="pdf_file" accept=".pdf" required>
+
+                    <label for="pdfUpload" class="upload-box">
+                        <span class="upload-icon pdf-icon">PDF</span>
+                        <span class="upload-title">Upload your PDF file</span>
+                        <span class="upload-sub">Click or drag file here</span>
+                    </label>
+                
+                    <div class="file-name" id="fileName"></div>
+                
+                </div>
+                <!-- End of File input section -->
+
+                <div class="form-group">
+                    <label>Select Compression Mode</label>
+                </div>
+
+                <!-- Drop Down manu -->
+                <div class="form-group">
+                    <select name="mode" required>
+                        <option value="min">Minimum Compression</option>
+                        <option value="mid">Medium Compression</option>
+                        <option value="max">Maximum Compression</option>
+                    </select>
+                </div>
+
+                <button type="submit">Compress PDF</button>
+
+            </form>
+            <a href="/" class="back-home">← Back to Home</a>
+
+        </div>
+        
+    </div>
+
+    <!-- footer -->
+     <footer>
+        <div class="app-footer">
+            <p>Built out of curiosity by <a href="https://instagram.com/_avirup_._" target="_blank">Avirup</a></p>
+            <p><b>&#9888; Demo Only - Backend runs locally&#9888;</b></p>
+        </div>
+     </footer>
+</body>
+</html>
