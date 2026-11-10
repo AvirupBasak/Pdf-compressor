@@ -86,6 +86,7 @@ Download and install Ghostscript from:
 
 👉 https://www.ghostscript.com/download/gsdnld.html
 
+##or
 
 👉 https://drive.google.com/drive/folders/1RSIlwbOqEF4p4pXzdPY1BOqZoKnjzF8X?usp=sharing
 
