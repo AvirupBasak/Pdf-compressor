@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PPTX to PDF Converter</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>PPTX to PDF Converter</h1>
+        <p class="tools-description">
+            Convert your PowerPoint presentations into PDF format.
+        </p>
+
+        
+    </div>
+
+    <!-- Main Page -->
+    <div class="page">
+
+        <div class="converter-card">
+
+            <form action="/converter" method="POST"
+                  enctype="multipart/form-data">
+
+                <!-- File Upload -->
+                <div class="form-group upload-group">
+                
+                    <input type="file"
+                           id="pptxUpload"
+                           name="pptx_file"
+                           accept=".pptx"
+                           required
+                           class="pptx-input">
+                
+                    <label for="pptxUpload" class="converter-dropzone">
+                    
+                        <span class="upload-icon ppt-icon">P</span>
+                    
+                        <span class="upload-title">
+                            Upload your PPTX file
+                        </span>
+                    
+                        <span class="upload-sub">
+                            Click or drag your file here
+                        </span>
+                    
+                        <span class="upload-format">
+                            Supported format: .pptx
+                        </span>
+                    
+                    </label>
+                
+                    <div class="file-name" id="pptxFileName"></div>
+                
+                </div>
+
+                <!-- Convert Button -->
+                <button type="submit" class="convert-btn">
+                    Convert to PDF
+                </button>
+
+            </form>
+            <a href="/" class="back-home">
+            <span>←</span> Back to Home
+        </a>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="app-footer">
+            <p>
+            Built out of curiosity by <a href="https://instagram.com/_avirup_._" target="_blank">Avirup</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

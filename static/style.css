@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    font-family: Arial, sans-serif;
+
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f6f8;
 }
 
@@ -22,12 +24,37 @@ body{
 
 .page{
     /* background-color: #1f4fb0; */
-    min-height: 80vh;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
 
 /* Card */
 
@@ -157,20 +184,522 @@ button:hover{
 
 
 /* Footer */
-.app-footer{
-    text-align:center;
-    padding:16px;
-    /* border-top:1px solid #777; */
-    font-size:12px;
-    color:#aaa;
+.app-footer {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.5;
 }
 
-.app-footer a{
-    color:inherit;          /* keeps same color as text */
-    text-decoration:none;   /* removes underline */
-    font-weight:inherit;    /* keeps same font weight */
+.app-footer p {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
 }
 
-.app-footer a:hover{
-    text-decoration:underline;   /* subtle hover feedback */
+.app-footer a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    background: #343a46;
+
+    padding: 4px 10px;
+    margin-left: 3px;
+
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: all 0.5s ease;
+}
+
+.app-footer a:hover {
+    background: #3068cf;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(48, 104, 207, 0.2);
+}
+
+
+/* Glassmorphism Back to Home Button */
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 9px 18px;
+    margin-top: 12px;
+
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: 600;
+
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.back-home:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.15);
+}
+
+.back-home span {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.back-home:hover span {
+    transform: translateX(-4px);
+}
+
+
+/* =================================
+   HOME PAGE - INDEX.HTML
+================================= */
+
+/* Header subtitle */
+.header p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+/* Main tool container */
+.tool-container {
+    width: 100%;
+    max-width: 850px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Tool Cards */
+.tool-card {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 35px 30px;
+
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+
+    text-decoration: none;
+    color: #222;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transition: all 0.3s ease;
+}
+
+/* Card hover effect */
+.tool-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    border-color: rgba(48, 104, 207, 0.25);
+}
+
+/* Tool Icon */
+.tool-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    background: linear-gradient(135deg, #3068cf, #6495ed);
+    color: white;
+
+    border-radius: 15px;
+    margin-bottom: 22px;
+
+    box-shadow: 0 5px 12px rgba(48, 104, 207, 0.2);
+}
+
+/* Card Heading */
+.tool-card h2 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Card Description */
+.tool-card p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #777;
+    margin-bottom: 22px;
+}
+
+/* Explore link */
+.tool-card span {
+    color: #3068cf;
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-top: auto;
+    transition: all 0.3s ease;
+}
+
+.tool-card:hover span {
+    color: #1f4fb0;
+    transform: translateX(5px);
+}
+
+/* Responsive design */
+@media (max-width: 650px) {
+
+    .tool-container {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        gap: 20px;
+    }
+
+    .tool-card {
+        padding: 28px 25px;
+    }
+
+    .header {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+}
+
+
+
+/* =================================
+   PPTX TO PDF CONVERTER
+================================= */
+
+/* Converter card */
+.converter-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 35px;
+    width: 100%;
+    max-width: 460px;
+
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+
+    text-align: center;
+}
+
+/* Converter upload area */
+.converter-upload .upload-box {
+    min-height: 120px;
+}
+
+/* Converter upload hover */
+.converter-upload .upload-box:hover {
+    border-color: #3068cf;
+    background: #f2f6ff;
+}
+
+/* Convert button */
+.convert-btn {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #3068cf;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+.convert-btn:hover {
+    background: #1f4fb0;
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(48, 104, 207, 0.2);
+}
+
+/* Converter page subtitle */
+.tools-description {
+    font-size: 13px;
+    color: #888;
+    margin-top: 6px;
+}
+
+
+/* PPTX Converter Upload Area */
+
+.pptx-input {
+    display: none;
+}
+
+.converter-dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 190px;
+    padding: 25px;
+    background: #fafbfc;
+    border: 2px dashed #c7ced6;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.converter-dropzone:hover {
+    border-color: #3068cf;
+    background: #eef3ff;
+}
+
+.upload-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.converter-dropzone .upload-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 6px;
+}
+
+.converter-dropzone .upload-sub {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.converter-dropzone .upload-format {
+    font-size: 11px;
+    color: #999;
+}
+
+#pptxFileName {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #3068cf;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .converter-card {
+        padding: 25px 20px;
+    }
+}
+
+
+/* PDF Compression Success Page */
+
+.success-page {
+    flex: 1;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.success-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 40px 32px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #16a34a;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.success-card h2 {
+    color: #222;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.success-message {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.file-details {
+    background: #f7f9fc;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.detail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 0;
+}
+
+.detail-row span {
+    color: #888;
+    font-size: 12px;
+}
+
+.detail-row strong {
+    color: #333;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.download-btn,
+.another-btn {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.download-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2);
+}
+
+.another-btn {
+    background: #eef2ff;
+    color: #3456a5;
+}
+
+.another-btn:hover {
+    background: #e0e7ff;
+    transform: translateY(-2px);
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #888;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #2563eb;
+}
+
+/* ICONS */
+
+/* PPT ICON */
+.ppt-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    background: #d24726;
+    color: white;
+    border-radius: 8px;
+    font-size: 27px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(210, 71, 38, 0.2);
+}
+
+/* PDF Icon */
+
+.pdf-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 14px;
+
+    background: #e53935;
+    color: white;
+
+    border-radius: 9px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    box-shadow: 0 4px 10px rgba(229, 57, 53, 0.25);
+}
+
+
+/* PDF Compressor Header - Slightly Smaller */
+
+.compressor-header {
+    padding: 10px 0;
+}
+
+.compressor-header h1 {
+    font-size: 32px;
 }
