@@ -1,8 +1,19 @@
+
+# Python virtual environment
 venv/
+
+# Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
+
+# IDE and editor settings
 .vscode/
+
+# Runtime uploaded and generated files
 uploads/
 compressed/
+converted/
+
+# Operating system files
 .DS_Store
 Thumbs.db
